@@ -1,0 +1,6 @@
+---
+- name: Descargar tmux
+  apt:
+    name: tmux
+    state: present
+    update_cache: true

@@ -1,0 +1,12 @@
+---
+- name: Descargar anydesk
+  get_url: 
+    url:  "{{ linkany }}"
+    dest: "{{ rutaany }}"
+    
+  
+
+- name: instalar deb
+  apt:
+    deb:  "{{ rutany2 }}"
+    

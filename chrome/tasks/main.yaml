@@ -1,0 +1,10 @@
+---
+- name: Descargar google chrome
+  get_url: 
+    url: "{{ linkchrome }}"
+    dest: "/home/malfonso/Descargas/"
+
+- name: instalar chrome
+  apt:
+    deb: "/home/malfonso/Descargas/google-chrome-stable_current_amd64.deb"
+    
