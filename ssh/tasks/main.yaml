@@ -1,0 +1,6 @@
+---
+- name: Descargar SSH
+  apt:
+    name: ssh
+    state: present
+    update_cache: true
