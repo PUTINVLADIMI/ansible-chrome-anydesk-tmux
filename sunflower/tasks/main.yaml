@@ -1,0 +1,12 @@
+---
+- name: Descargar sunflower
+  get_url: 
+    url:  "{{ linksun }}"
+    dest: "{{ rutasun }}"
+    
+  
+
+- name: instalar deb
+  apt:
+    deb:  "{{ rutasun2 }}"
+    
